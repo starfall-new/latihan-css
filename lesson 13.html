@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 13</title>
+</head>
+<body>
+    <div class="flex-container-13a">
+  <div class="item-pink-13a">
+    <span>item1</span>
+  </div>
+  <div class="item-blue-13a"></div>
+</div>
+
+<style>
+    .flex-container-13a {
+  display: flex;
+}
+.item-pink-13a {
+  background-color: lightpink;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-blue-13a {
+  background-color: lightblue;
+  width: 200px;
+  height: 50px;
+}
+</style>
+
+<br><br>
+
+<div class="flex-container-13b">
+  <div class="item-pink-13b"></div>
+  <div class="item-blue-13b">
+    <div class="left-col">
+      <div>row1</div>
+      <div>row2</div>
+    </div>
+    <div class="right-col">
+      <div>row2</div>
+    </div>
+  </div>
+</div>
+
+<style>
+    .flex-container-13b {
+  display: flex;
+}
+.item-pink-13b {
+  background-color: lightpink;
+  width: 100px;
+  height: 50px;
+}
+.item-blue-13b {
+  background-color: lightblue;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+</style>
+
+<br><br>
+
+<div class="gmail-container">
+  <div class="gmail-item">
+    <img src="🍥     ◞      mornye.jpg" class="gmail-avatar">
+    
+    <div class="gmail-content">
+      <div class="gmail-header">
+        <strong class="sender">Chewy Promotions</strong>
+        <span class="time">4:58 PM</span>
+      </div>
+      <div class="subject">Biggest sales of the year!</div>
+      <div class="snippet">Hey there! We're writing to tell you about our...</div>
+    </div>
+  </div>
+</div>
+
+<div class="gmail-container">
+  <div class="gmail-item">
+    <img src="download.jpg" class="gmail-avatar">
+    
+    <div class="gmail-content">
+      <div class="gmail-header">
+        <strong class="sender">Best buy</strong>
+        <span class="time">12:32 PM</span>
+      </div>
+      <div class="subject">Your Best Buy eReceipt</div>
+      <div class="snippet">Thank you for shopping at Best Buy, Here is...</div>
+    </div>
+  </div>
+</div>
+
+<div class="gmail-container">
+  <div class="gmail-item">
+    <img src="well - Copy.jpg" class="gmail-avatar">
+    
+    <div class="gmail-content">
+      <div class="gmail-header">
+        <strong class="sender">Netflix</strong>
+        <span class="time">9:00 AM</span>
+      </div>
+      <div class="subject">Here's what's comming soon to netflix</div>
+      <div class="snippet">Brand new movies and shows, old favorites...</div>
+    </div>
+  </div>
+</div>
+
+<style>
+    .gmail-container {
+  width: 400px;
+  border: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+.gmail-item {
+  display: flex;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+.gmail-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.gmail-content {
+  flex-grow: 1;
+}
+.gmail-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+.sender { font-size: 14px; color: #111; }
+.time { font-size: 12px; color: #666; }
+.subject { font-size: 13px; font-weight: bold; margin-bottom: 2px; }
+.snippet { font-size: 13px; color: #666; }
+</style>
+
+<br><br>
+
+<div class="tweet-card">
+  <img src="download.jpg" class="tweet-avatar">
+  
+  <div class="tweet-main">
+    <div class="tweet-author">
+      <strong>supersimple.dev</strong> <span class="handle">@SuperSimpleDev</span>
+    </div>
+    <div class="tweet-text">
+      What is backend web development? A complete overview. New video is up!
+    </div>
+    
+    <div class="yt-preview">
+      <div class="yt-thumbnail"></div>
+      <div class="yt-info">
+        <div class="yt-domain">youtube.com</div>
+        <div class="yt-title">Backend web development - a complete overview (2021)</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+    .tweet-card {
+  display: flex;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+.tweet-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.tweet-main {
+  flex-grow: 1;
+}
+.tweet-author { margin-bottom: 5px; font-size: 14px; }
+.handle { color: gray; }
+.tweet-text { font-size: 14px; margin-bottom: 12px; line-height: 1.4; }
+
+.yt-preview {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.yt-thumbnail {
+  width: 120px;
+  background-color: #e0e0e0;
+}
+.yt-info {
+  flex-grow: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.yt-domain { color: gray; font-size: 13px; margin-bottom: 4px; }
+.yt-title { font-size: 14px; font-weight: 500; }
+</style>
+</body>
+</html>

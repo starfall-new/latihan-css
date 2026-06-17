@@ -3,11 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lesson 12</title>
 </head>
 <body>
-    <div>
-        
+    <div class="container-12">
+  <h3>12a.</h3>
+  <div class="flex-12a">
+    <div class="item-blue" style="width: 200px;">200px</div>
+    <div class="item-pink" style="width: 75px;">75px</div>
+  </div>
+
+  <h3>12b.</h3>
+  <div class="flex-12b">
+    <div class="item-blue" style="width: 50px;">item1</div>
+    <div class="item-pink flex-grow-1">item2</div>
+    <div class="item-blue" style="width: 75px;">item3</div>
+  </div>
+
+  <h3>12c.</h3>
+  <div class="flex-12c">
+    <div class="item-pink-small">item1</div>
+    <div class="item-pink-small">item2</div>
+    <div class="item-pink-small">item3</div>
+    <div class="item-pink-small">item4</div>
+  </div>
+
+  <h3>12d.</h3>
+  <div class="flex-12d">
+    <div class="item-pink-small">item1</div>
+    <div class="item-pink-small">item2</div>
+  </div>
+</div>
+
+<style>
+.item-blue { background-color: lightblue; padding: 10px; }
+.item-pink { background-color: lightpink; padding: 10px; }
+.item-pink-small { background-color: lightpink; padding: 5px 10px; }
+
+.flex-12a {
+  display: flex;
+}
+
+.flex-12b {
+  display: flex;
+}
+.flex-grow-1 {
+  flex-grow: 1; 
+}
+
+.flex-12c {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.flex-12d {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border: 1px solid gray;
+  padding: 0 10px;
+}
+</style>
+
+<br><br>
+
+<div class="card-12e">
+  <div class="menu-item">
+    <span>Home</span>
+    <span class="badge">14</span>
+  </div>
+  <div class="menu-item">
+    <span>Notifications</span>
+    <span class="badge">3</span>
+  </div>
+  <div class="menu-item">
+    <span>Messages</span>
+    <span class="badge">5</span>
+  </div>
+</div>
+
+<style>
+    .card-12e {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+.badge {
+  background-color: #3b82f6;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+</style>
+
+<br><br>
+
+<div class="navbar-12f">
+  <div class="nav-brand">Home</div>
+  <input type="text" class="search-input" placeholder="Search">
+  <button class="btn">Download</button>
+</div>
+
+<style>
+    .navbar-12f {
+  display: flex;
+  align-items: center;
+  background-color: #6b46c1;
+  padding: 10px 15px;
+  gap: 15px;
+}
+.nav-brand {
+  color: white;
+  font-weight: bold;
+}
+.search-input {
+  flex-grow: 1;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+.btn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+</style>
+
+<br><br>
+
+    <div class="ki">
+        <img src="download.jpg" class="imageiu">
+
+        <div class="text-fo">
+            <p class="text-grey">oliver</p>
+            <p class="text5">The cat</p>
+            <p class="text5">Popular</p>
+        </div>
+
+        <button class="buttoni">Follow</button>
     </div>
+
+    <div class="ki">
+        <img src="🍥     ◞      mornye.jpg" class="imageiu">
+
+        <div class="text-fo">
+            <p class="text-grey">mimi</p>
+            <p class="text5">sleepy cat</p>
+            <p class="text5">Popular</p>
+        </div>
+
+        <button class="buttoni">Follow</button>
+    </div>
+
+    <div class="ki">
+        <img src="Kirino Iko.jpg" class="imageiu">
+
+        <div class="text-fo">
+            <p class="text-grey">rex</p>
+            <p class="text5">Happy</p>
+            <p class="text5">Popular</p>
+        </div>
+
+        <button class="buttoni">Follow</button>
+        </div>
+
+        <style>
+            .ki {
+            display: flex;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            width: 350px;  
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border: none;
+        }
+
+        .imageiu {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+ 
+        .text-fo {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .text-grey {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .text5 {
+            font-size: 14px;
+            color: grey;
+            margin: 2px 0;
+        }
+        
+        .buttoni {
+            background-color: #00a2ed;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        </style>
 </body>
 </html>
