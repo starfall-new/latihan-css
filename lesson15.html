@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 15</title>
+</head>
+<body>
+    <div class="upper">
+  <div class="thumbnail"></div>
+  
+  <button class="bt">X</button>
+  
+  <span class="durasi">0:29</span>
+</div>
+
+<br><br><br>
+
+<div class="produk">
+  <img src="images.jpg" class="image">
+  
+  <div class="diskon">20% OFF</div>
+  
+  <div class="overlay">
+    <button class="btn">Add to Cart</button>
+  </div>
+</div>
+
+<style>
+.upper {
+  position: relative;
+  width: 300px;
+  height: 180px;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  background-color: #808080;
+}
+
+.bt {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.durasi {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2px 6px;
+  font-family: sans-serif;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+.produk {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.diskon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 8px 14px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 8px 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+</style>
+</body>
+</html>
