@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson  16</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 16 Exercises - YouTube Project</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="search">
+      <input type="text" placeholder="Search">
+      <button class="searchbt" title="Search">
+        🔍
+      </button>
+    </div>
+  </header>
+
+  <main class="video-grid">
+    <div class="videov">
+      
+      <div class="thumbnailr">
+        <a href="https://youtu.be/NXkaG5apUK8" target="_blank">
+          <img class="thumbnail" src="adad.jpg">
+        </a>
+        <div class="videom">14:20</div>
+      </div>
+
+      <div class="videog">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/channel/link_channelnya" target="_blank">
+            <img class="profile" src="terra hijau.jpg">
+          </a>
+        </div>
+
+        <div class="videof">
+          <p class="videot">
+            <a class="videoo" href="https://www.youtube.com/watch?v=di_link_video_aslinya" target="_blank">
+              1000 semut vs bencana alam
+            </a>
+          </p>
+          <p class="video3">TerraHijau indonesia</p>
+          <p class="video4">3.4M views &bull; 4 days ago</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .header {
+      padding: 10px 20px;
+      background-color: white;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #e5e5e5;
+      display: flex;
+      align-items: center;
+    }
+
+    .search {
+      display: flex;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .search input {
+      flex: 1;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .searchbt {
+      padding: 8px 16px;
+      border: 1px solid #ccc;
+      border-left: none;
+      background-color: #f8f8f8;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .videov {
+      width: 100%;
+    }
+
+    .thumbnailr {
+      position: relative;
+      margin-bottom: 12px;
+    }
+
+    .thumbnail {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+      transition: opacity 0.15s;
+    }
+
+
+    .videom {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      font-size: 12px;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .videog {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      column-gap: 12px;
+    }
+
+    .profile {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .videot {
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+
+    .videoo {
+      color: #0f0f0f;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .videoo:hover {
+      color: #0f0f0f;
+    }
+
+    .video3, .video4 {
+      font-size: 12px;
+      color: #606060;
+      margin-top: 2px;
+      margin-bottom: 0;
+    }
+  </style>
+</body>
+</html>
